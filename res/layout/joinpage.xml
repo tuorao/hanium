@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/line_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <Button
+                android:id="@+id/canbtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="11dp"
+                android:background="@drawable/back_button"
+                android:gravity="center_vertical|center_horizontal" />
+
+            <Button
+                android:id="@+id/okbtn"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/canbtn"
+                android:layout_alignBottom="@+id/canbtn"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="11dp"
+                android:background="@drawable/mu_button_background"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="다 음"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="I        D(이메일 형식)"
+                    android:textColor="#4D96FF"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/idcheck"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/button_background"
+                    android:text="중복확인" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/il_memId"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:ems="10"
+                android:inputType="textEmailAddress" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="P      W"
+                android:textColor="#4D96FF"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/il_pass"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:ems="10"
+                android:inputType="textPassword" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="P      W  확 인"
+                android:textColor="#4D96FF"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/il_pass2"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:ems="10"
+                android:inputType="textPassword" >
+            </EditText>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="닉네임"
+                    android:textColor="#4D96FF"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/nickcheck"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/button_background"
+                    android:text="중복확인" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/il_memNickName"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:ems="10"
+                android:inputType="text" >
+            </EditText>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

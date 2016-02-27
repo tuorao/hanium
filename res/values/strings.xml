@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Hanium_T_T</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="profile_button">profile</string>
+    <string name="country_label">country ISO</string>
+    <string name="signup_button">Signup</string>
+    <string name="me_button">"내 정보"</string>
+    <string name="update_profile_button">"업데이트"</string>
+    <string name="name">이름</string>
+    <string name="age">생년월일</string>
+    <string name="town">동네</string>
+    <string name="gender">성별</string>
+
+    <string-array name="gender_types">
+        <item>남</item>
+        <item>여</item>
+    </string-array>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/login_kakao"
+            android:layout_width="wrap_content"
+            android:layout_height="200px"
+            android:background="@drawable/kakao_banner"
+            android:text="" />
+
+        <!-- <Button
+            android:id="@+id/login_facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="페북로그인" /> -->
+
+        <Button
+            android:id="@+id/login_il"
+            android:layout_width="wrap_content"
+            android:layout_height="200px"
+            android:background="@drawable/il_logo_banner"
+            android:text="" />
+
+    </LinearLayout>
+    
+</RelativeLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/line_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:id="@+id/joinbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:onClick="onClick"
+                android:text="회원가입"
+                android:textColor="#ffffff"
+                android:textSize="15dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_marginTop="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/user_icon"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/il_login_id"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="I D 입 력"
+            android:text="asdf"
+            android:inputType="textEmailAddress" >
+            
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/lock_icon"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/il_login_pass"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="비 밀 번 호"
+            android:text="asdf"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/findbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/find2btn"
+            android:layout_alignBottom="@+id/find2btn"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="61dp"
+            android:onClick="onClick"
+            android:text="비밀번호 찾기"
+            android:textColor="#FF0000"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/okbtn"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"
+            android:background="@drawable/button_background"
+            android:onClick="onClick"
+            android:text="로  그  인"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/find2btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="39dp"
+            android:layout_toLeftOf="@+id/okbtn"
+            android:onClick="onClick"
+            android:text="아이디 찾기"
+            android:textColor="#0000FF"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+</LinearLayout>

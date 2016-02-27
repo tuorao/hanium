@@ -1,0 +1,165 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:id="@+id/li1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/blue_bar"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <Button
+                android:id="@+id/back_btn"
+                android:layout_width="90px"
+                android:layout_height="90px"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/back_button" />
+
+            <Button
+                android:id="@+id/home_btn"
+                android:layout_width="90px"
+                android:layout_height="90px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/home_button" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="타이틀"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/li1"
+        android:background="@drawable/blue_teduri" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_join"
+                android:layout_width="100px"
+                android:layout_height="60dp"
+                android:layout_weight="8"
+                android:background="@drawable/info_icon"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="150px"
+                android:layout_height="20dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="정보"
+                android:textColor="#3162C7" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_board"
+                android:layout_width="100px"
+                android:layout_height="60dp"
+                android:layout_weight="8"
+                android:background="@drawable/board_icon"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="150px"
+                android:layout_height="20dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="게시판"
+                android:textColor="#3162C7" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_gall"
+                android:layout_width="100px"
+                android:layout_height="60dp"
+                android:layout_weight="8"
+                android:background="@drawable/gallery_icon"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="150px"
+                android:layout_height="20dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="갤러리"
+                android:textColor="#3162C7" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_mem"
+                android:layout_width="100px"
+                android:layout_height="60dp"
+                android:layout_weight="8"
+                android:background="@drawable/member_icon"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="150px"
+                android:layout_height="20dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="회원"
+                android:textColor="#3162C7" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/bottom"
+        android:layout_below="@+id/ll_title_layout" >
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

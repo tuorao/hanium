@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="icon_array">
+        <item>선택</item>
+        <item>스포츠,레져</item>
+        <item>음악,악기</item>
+        <item>등산</item>
+        <item>스터디,자기계발</item>
+        <item>자전거</item>
+        <item>패션</item>
+        <item>책,독서</item>
+        <item>봉사활동</item>
+        <item>사진</item>
+        <item>여행,캠핑</item>
+        <item>영화</item>
+        <item>스키,보드</item>
+        <item>낚시</item>
+        <item>여성</item>
+    </string-array>
+
+</resources>
